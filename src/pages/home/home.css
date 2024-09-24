@@ -1,0 +1,124 @@
+.home {
+  background: url(../../assets/Images/homebanner.png) no-repeat;
+  background-size: cover;
+  width: 100%;
+  margin-top: 170px;
+  display: flex;
+  align-items: center;
+  height: 500px;
+  border-radius: 32px;
+}
+
+.home-content {
+  padding-left: 2rem;
+  padding-right: 2rem;
+  color: white;
+}
+
+.ask-ai-box {
+  background: white;
+  border-radius: 32px;
+  padding: 15px;
+  width: 500px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.ask-ai-box input {
+  border: none;
+  border-radius: 32px;
+  width: 70%;
+  padding: 5px;
+}
+
+@media screen and (max-width: 767px) {
+  .ask-ai-box {
+    width: auto;
+    padding: 10px;
+  }
+}
+
+@media screen and (min-width: 991px) {
+  .ask-ai-box button {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
+  .home-content {
+    width: 50%;
+  }
+}
+.ask-ai-box button {
+  border-radius: 32px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.home-carousel .slick-prev,
+.home-carousel .slick-next {
+  background-color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.home-carousel .slick-prev {
+  left: 0px;
+  z-index: 99 !important;
+}
+
+
+.home-carousel .slick-next {
+  right: 0px;
+  z-index: 99 !important;
+}
+
+.home-carousel .slick-prev::before,
+.home-carousel .slick-next::before {
+  display: none !important;
+}
+
+
+/* banner content cutting-edge */
+
+.cutting-edge-ai{
+  background-color: var(--off-color);
+  width: 100%;
+  border-radius: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 3rem;
+}
+
+@media screen and (max-width : 767px) {
+  .cutting-edge-ai{
+    padding: 2rem;
+  }
+}
+
+.bg-violet{
+  background: linear-gradient(to right, #A4C1FE, #7373FB);
+  border-radius: 50px;
+  color: white;
+  display: flex;
+  padding: 3rem;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@media screen and (max-width:991px) {
+  .bg-violet{
+    margin-top: 3rem;
+  }
+}
+
+.bg-violet img{
+  width: 50px;
+}

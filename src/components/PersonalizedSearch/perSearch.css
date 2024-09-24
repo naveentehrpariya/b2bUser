@@ -1,0 +1,29 @@
+.personalized{
+    background: url(../../assets/Images/bluebanner.png) no-repeat center center;
+    width: 100%;
+    background-size: cover;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem;
+}
+
+@media screen and (max-width : 767px) {
+    .personalized{
+        padding: 2rem;
+    }
+}
+
+.personalized button{
+    width: 300px;
+    font-size: 19px;
+}
+
+@media screen and (max-width : 480px) {
+    .personalized button{
+        width: 100%;
+    }
+    
+}

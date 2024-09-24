@@ -1,0 +1,36 @@
+/* .skeleton-card {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  } */
+  
+  .skeleton-image {
+    height: 150px;
+    background: #e0e0e0;
+    margin-bottom: 10px;
+    border-radius: 4px;
+  }
+  
+  .skeleton-text {
+    height: 20px;
+    background: #e0e0e0;
+    margin-bottom: 10px;
+    border-radius: 4px;
+  }
+  
+  .skeleton-text.short {
+    width: 60%;
+  }
+  
+  .skeleton-button {
+    height: 35px;
+    background: #e0e0e0;
+    border-radius: 4px;
+    width: 80%;
+  }
+  

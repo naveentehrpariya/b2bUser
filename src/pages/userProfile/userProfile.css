@@ -1,0 +1,61 @@
+/* ProfilePage.css */
+
+
+.sidebar {
+    width: auto;
+    background-color: #343a40;
+    color: white;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.sidebar .nav-link {
+    color: white;
+    padding: 10px 15px;
+    margin: 5px 0;
+    display: block;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.sidebar .nav-link:hover,
+.sidebar .nav-link.active {
+    background-color: #495057;
+}
+
+.main-content {
+    width: 75%;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: white;
+}
+
+.header h1 {
+    margin-bottom: 20px;
+    font-size: 2em;
+    border-bottom: 2px solid #dee2e6;
+    padding-bottom: 10px;
+}
+
+
+
+
+.text-center {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.btn {
+    width: 150px;
+}
+
+.contact-form ul .nav-item .active{
+    color: var(--primary-color) !important;
+    font-weight: bold; 
+}
+
+.scrollable-table-container {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  

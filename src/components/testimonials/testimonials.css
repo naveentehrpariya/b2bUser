@@ -1,0 +1,18 @@
+.customer .reviews{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-style: italic;
+}
+
+@media screen and (min-width : 991px) {
+    .customer .reviews p{
+        width: 50%;
+    }
+}
+
+.testimonials .slick-slider .slick-dots li button:before{
+    font-size: 12px !important;
+}
+

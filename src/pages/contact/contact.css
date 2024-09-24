@@ -1,0 +1,53 @@
+.contact{
+    background-color: var(--off-color);
+    width: 100%;
+    margin-top: 160px;
+    display: flex;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+@media screen and (max-width : 991px) {
+    .contact{
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
+}
+
+.hover-underline-animation {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+  }
+  
+  .hover-underline-animation::after {
+    content: '';
+    position: absolute;
+    width: 50%; 
+    height: 2px; 
+    bottom: 0;
+    left: 0;
+    background-color: var(--primary-color); /* Use the text color */
+    transition: width 0.3s ease; /* Smooth transition */
+  }
+  
+  .hover-underline-animation:hover::after {
+    width: 100%; /* Full underline on hover */
+  }
+  
+  /*  */
+
+  .contact-form{
+    background-color: white;
+    border-radius: 32px;
+  }
+
+  .contact-form form input,
+  .contact-form form select,
+  .contact-form form textarea {
+     background-color: var(--off-color);
+     border: none;
+     padding: 20px;
+  }

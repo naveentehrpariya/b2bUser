@@ -1,0 +1,157 @@
+/* @import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap'); */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*  */
+@font-face {
+    font-family: 'cera'; /* Give your font a name */
+    src: url('./assets/Cera\ Pro\ Medium.otf') format('opentype');
+    font-weight: normal; /* Set the font weight */
+    font-style: normal; /* Set the font style */
+  }
+
+  @font-face {
+    font-family: 'product-sans'; /* Give your font a name */
+    src: url('./assets/ProductSans-Regular.ttf') format('truetype');
+    font-weight: normal; /* Set the font weight */
+    font-style: normal; /* Set the font style */
+  }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "product-sans";
+  }
+
+a {
+    text-decoration: none;
+}
+
+:root{
+    --primary-color : #1A3A66;
+    --off-color : #F5F7FA;
+}
+
+.bg-custom-primary{
+    background-color: var(--primary-color) !important;
+}
+
+.bg-white{
+    background: white;
+}
+
+.border-primary{
+    border: 2px solid var(--primary-color) !important;
+}
+
+.btn-primary{
+    background-color: var(--primary-color) !important ;
+}
+
+.custom-text-primary{
+    color: var(--primary-color) !important;
+}
+
+.text-grey{
+    color: #666666 !important;
+}
+ 
+
+.btn-bg-white{
+    color: #1A3A66 !important;
+}
+
+/* anomated btn */
+/* From Uiverse.io by gharsh11032000 */ 
+.animated-button {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    padding: 16px 36px;
+    border: 4px solid;
+    border-color: transparent;
+    font-size: 16px;
+    background-color: inherit;
+    border-radius: 100px;
+    font-weight: 600;
+    color: white;
+    box-shadow: 0 0 0 2px white;
+    cursor: pointer;
+    overflow: hidden;
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  
+  .animated-button svg {
+    position: absolute;
+    width: 24px;
+    fill: white;
+    z-index: 9;
+    transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  
+  .animated-button .arr-1 {
+    right: 16px;
+  }
+  
+  .animated-button .arr-2 {
+    left: -25%;
+  }
+  
+  .animated-button .circle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border-radius: 50%;
+    opacity: 0;
+    transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  
+  .animated-button .text {
+    position: relative;
+    z-index: 1;
+    transform: translateX(-12px);
+    transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  
+  .animated-button:hover {
+    box-shadow: 0 0 0 12px transparent;
+    color: black;
+    border-radius: 12px;
+  }
+  
+  .animated-button:hover .arr-1 {
+    right: -25%;
+  }
+  
+  .animated-button:hover .arr-2 {
+    left: 16px;
+  }
+  
+  .animated-button:hover .text {
+    transform: translateX(12px);
+  }
+  
+  .animated-button:hover svg {
+    fill: #1A3A66;
+  }
+  
+  .animated-button:active {
+    scale: 0.95;
+    box-shadow: 0 0 0 4px #1A3A66;
+  }
+  
+  .animated-button:hover .circle {
+    width: 220px;
+    height: 220px;
+    opacity: 1;
+  }
+  
+  .ai-search-input:focus-visible{
+    outline: none !important;
+  }

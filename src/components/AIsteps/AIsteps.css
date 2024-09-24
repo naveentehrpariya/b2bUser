@@ -1,0 +1,21 @@
+.find-best-deal-ai{
+    background: url("../../assets/Images/bluebanner.png") no-repeat center center;
+    background-size: cover;
+    width: 100%;
+    border-radius: 32px;
+    padding: 3rem;
+}
+
+@media screen and (max-width : 767px) {
+    .find-best-deal-ai{
+        padding: 2rem;
+    }
+}
+
+.vertical-timeline-element-content{
+    box-shadow: none !important;
+}
+
+.vertical-timeline-element-content{
+    padding: 0px !important;
+}

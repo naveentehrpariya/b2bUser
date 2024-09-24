@@ -1,0 +1,139 @@
+.product-list-banner{
+    background: url("../../assets/Images/prolistbanner.png") no-repeat center center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 32px;
+    margin-top: 170px;
+    color: white;
+    padding: 6rem;
+    text-align: center;
+}
+
+.product-list-banner p{
+    width: 50%;
+}
+
+
+@media screen and (max-width : 991px) {
+    .product-list-banner p{
+        width: 70%;
+    }
+}
+
+
+
+@media screen and (max-width : 767px) {
+    .product-list-banner{
+        padding: 3rem;
+    }
+}
+
+@media screen and (max-width : 580px) {
+    .product-list-banner p{
+        width: auto;
+    }
+
+    .product-list-banner{
+        padding: 2rem;
+    }
+}
+
+
+/*  */
+
+.canon-camera{
+    background: url(../../assets/Images/canoncanerabg.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    padding: 5rem;
+    display: flex;
+    flex-direction: column;
+    border-radius: 32px;
+}
+.canon-camera p{
+    font-size: 18px;
+}
+
+@media screen and (min-width : 767px) {
+    .canon-camera p {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .canon-camera{
+        padding: 3rem;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .canon-camera{
+        padding: 2rem;
+    }
+}
+/*  */
+
+.products-filters {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.filter-select select {
+    border-radius: 15px;
+    color: var(--primary-color);
+    font-weight: bold;
+    border: 3px solid var( --off-color);
+}
+
+/* pagination */
+@media screen and (min-width : 991px) {
+    .page-item{
+        padding-left: 6px;
+        padding-right: 6px;
+    }
+    .page-item .page-link {
+        border-radius: 10px;
+      }
+}
+
+.page-item.active .page-link {
+    background-color: var(--primary-color) !important; 
+    border-color: var(--primary-color) !important; 
+    color: white !important;
+  }
+
+  .page-item .page-link {
+    color: var(--primary-color) !important; 
+  }
+
+/*  */
+
+.explore-other-categories{
+    border-top: 3px solid var(--off-color);
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    margin-top: 3rem;
+}
+
+/* range */
+
+.custom-range-slider {
+    width: 100%;  /* Make sure the slider fits within the container */
+    max-width: 300px;  
+    margin: 0 auto;  /* Center the slider if needed */
+    border: none !important;
+    box-shadow: none !important;
+  }
+
+  
+  
+  /* Optional: Customize the slider handle and track if needed */
+  .custom-range-slider .my-custom-bars {
+    background: #ddd;  /* Example color for the slider bars */
+  }
+  

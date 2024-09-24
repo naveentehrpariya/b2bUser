@@ -1,0 +1,31 @@
+.abt-banner{
+    margin-top: 160px;
+    background: url("../../assets/Images/abtbanner.png") no-repeat center center;
+    background-size: cover;
+    width: 100%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+}
+
+@media screen and (min-width : 991px) {
+    .abt-banner{
+        padding-left: 3rem ;
+        padding-right: 3rem;
+    }
+}
+
+
+@media screen and (max-width : 1200px) {
+    .abt-banner{
+        height: 250px;
+    }
+}
+
+.goals{
+    background-color: var(--off-color);
+    padding: 3rem;
+    border-radius: 32px;
+}

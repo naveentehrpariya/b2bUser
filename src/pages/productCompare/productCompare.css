@@ -1,0 +1,20 @@
+.product-compare {
+    margin-top: 160px;
+    background-color: var(--off-color);
+    width: 100%;
+    display: grid;
+    place-items: center;
+    overflow-x: auto; 
+}
+
+.compare-table {
+    width: 100%;
+    max-width: 100%;
+}
+
+@media (max-width: 768px) {
+    .compare-table {
+        display: block;
+        overflow-x: auto;
+    }
+}

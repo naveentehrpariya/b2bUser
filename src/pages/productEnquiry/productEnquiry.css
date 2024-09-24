@@ -1,0 +1,40 @@
+.product-enquiry{
+    background-color: var(--off-color) ;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    margin-top: 160px;
+}
+@media screen and (max-width : 991px) {
+    .product-enquiry{
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
+}
+
+.product-enquiry img{
+    width: 200px;
+}
+
+.custom-checkbox:checked {
+    background-color: #007bff !important;
+    border-color: #007bff;
+  }
+
+
+  .product-enquiry img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 22px;
+  }
+
+  @media screen and (max-width : 767px) {
+    .product-enquiry img{
+        height: auto;
+    }
+  }

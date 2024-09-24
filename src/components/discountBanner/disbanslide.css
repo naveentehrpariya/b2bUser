@@ -1,0 +1,72 @@
+.discount-slider .slick-next {
+  background-color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+  border-radius: 15px;
+  width: 40px;
+  height: 40px;
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  top: 65%;
+  transition: transform 0.3s ease;
+}
+
+.discount-slider .slick-next {
+  right: 25px;
+  z-index: 99 !important;
+}
+
+.discount-slider .slick-prev {
+  display: none !important;
+}
+
+.discount-slider .slick-next::before {
+  display: none !important;
+}
+
+@media screen and (max-width : 480px) {
+  .discount-slider .slick-slider .slick-next{
+    display: none !important;
+  }
+}
+
+@media screen and (min-width : 767px) {
+    .discount-slider .slick-dots{
+        bottom: 28px !important;
+        left: 53px !important;
+        width: auto !important;
+    
+    }
+
+    .discount-slider .slick-dots li.slick-active button:before{
+        color: white !important;
+        transition: width 0.3s ease;
+        width: 20px !important;
+   
+      }
+}
+
+.discount-slider .slick-dots button:before{
+    font-size: 12px;
+}
+
+.discount-slider img{
+  width: 100% !important; 
+  border-radius: 22px;
+  height: 408px;
+  object-fit: cover;
+  object-position: center;
+}
+
+@media screen and (max-width : 991px) {
+  .discount-slider img{
+    height: 350px ;
+  }
+}
+
+@media screen and (max-width : 480px) {
+  .discount-slider img{
+    height: 200px ;
+  }
+}

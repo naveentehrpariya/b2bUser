@@ -1,0 +1,34 @@
+.nav-tabs {
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    flex-wrap: nowrap !important;
+  }
+  
+  .nav-tabs .nav-item {
+    flex: 1 1 auto;
+  }
+  
+  .nav-tabs .nav-link.active {
+    border-bottom: 3px solid var(--primary-color) !important;
+    border-top: none !important;
+    border-left: none !important;
+    border-right: none !important;
+    color: var(--primary-color) !important;
+    font-weight: bold !important;
+  }
+ 
+  .nav-tabs .nav-link{
+    color: black !important;
+    border-top: none !important;
+    border-left: none !important;
+    border-right: none !important;
+    cursor: pointer;
+  }
+
+  .nav-tabs .nav-link:focus, .nav-tabs .nav-link:hover {
+    border-bottom: 3px solid darkgray !important;
+  }
+
+ 
+  
