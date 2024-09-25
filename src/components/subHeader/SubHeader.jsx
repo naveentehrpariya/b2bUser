@@ -72,6 +72,7 @@ const SubHeader = ({ direction, ...args }) => {
     slidesToShow: 6,
     slidesToScroll: 1,
     initialSlide: 0,
+    variableWidth: true,
     responsive: [
       {
         breakpoint: 1024,
@@ -127,9 +128,9 @@ const SubHeader = ({ direction, ...args }) => {
 
   return (
     <div
-      className={`sub-header ${
+      className={`sub-header overflow-x-hidden ${
         scroll ? "bg-white sub-header-shadow" : ""
-      } container-fluid`}
+      }  border-b border-t border-gray-200`}
     >
       <Slider {...settings} ref={sliderRef} className="py-3 bg-white">
         {loading
@@ -149,20 +150,12 @@ const SubHeader = ({ direction, ...args }) => {
                 >
                   <DropdownToggle
                     caret
-                    className="dropdown-toggle-custom  w-100"
+                    className="dropdown-toggle-custom"
                   >
-                    <img
-                      src={category.image_path || logo}
-                      alt={category.name}
-                      className="category-thumbnail"
-                      onError={(e) => {
-                        e.target.onerror = null;
-                        e.target.src = logo;
-                      }}
-                    />
+                     
                     <span className="category-name">{category.name}</span>
                   </DropdownToggle>
-                  <DropdownMenu className="w-100" {...args}>
+                  <DropdownMenu className="" {...args}>
                     {category.subcategories.map((subcategory) => (
                       <DropdownItem
                         key={subcategory.id}

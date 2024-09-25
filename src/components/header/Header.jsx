@@ -90,7 +90,8 @@ const Header = (args) => {
         expand="lg">
           <div className="w-full flex items-center justify-between">
             <Link to="/">
-              <img src={logo} alt="logo" />
+            WHOYOUINTO ADMIN
+              {/* <img src={logo} alt="logo" /> */}
             </Link>
             <div className="ms-auto">
               <NavbarToggler onClick={toggle} />

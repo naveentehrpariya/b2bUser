@@ -15,30 +15,19 @@
     border-bottom: none !important;
 }
 
-.slider-item {
-  padding: 0 10px;
-}
+ 
 
 .dropdown-toggle-custom {
   display: flex;
   align-items: center;
-  background-color: white;
-  /* background-color: none !important; */
-  border-left: none;
-  border-right: 2px solid grey;
+  background-color: transparent;
   color: var(--primary-color) !important;
-  border-bottom: none;
-  border-top: none;
-  font-weight: bold;
-
-
-  color: black;
-  /* border: 1px solid #dee2e6; */
-  /* border: none !important; */
-  padding: 0.5rem 1rem;
-  border-radius: 0px !important ;
-  width: 100%;
-  justify-content: space-between;
+  padding: 0;
+  text-transform: uppercase !important;
+  border: 0 !important;
+  font-weight: 600;
+  width: auto !important;
+  padding-right: 19px;
 }
 
 .dropdown-toggle-custom:hover{
@@ -63,27 +52,17 @@
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  font-size: 16px;
+  font-size: 14px;
 }
 
 .dropdown-menu {
   z-index: 1001;
 }
 
-.sub-header .slick-slider {
-  border-top: 1px solid grey;
-  border-bottom: 1px solid grey;
-}
-
-/* Ensure dropdowns are not cut off */
-.sub-header .slick-slide {
-  height: auto;
-}
-
+ 
 .sub-header .slick-track {
   display: flex;
   align-items: flex-start;
-  /* transform: translate3d(-159px, 0px, 0px) !important; */
 }
 
 
@@ -146,3 +125,31 @@
   text-overflow: ellipsis;
   word-wrap: break-word;
 }
+
+
+.dropdown-toggle::after {
+  border-top: 2px solid #133766 !important;
+  border-left: 2px solid #133766 !important;
+  position: absolute;
+  right: 0px;
+  top: 2px;
+  width: 10px !important;
+  height: 10px !important;
+  background: transparent !important;
+  transform: rotate(-135deg);
+  border-bottom: 0 !important;
+  border-radius: 0 !important;
+  margin: 0 !important;
+}
+.sub-header .slick-track .slick-slide:not(last-child) .slider-item {
+  border-right: 1px solid #ccc !important; 
+  padding-right: 13px !important; 
+}
+
+.sub-header .slick-track .slick-slide  .slider-item {
+  padding-left: 13px !important; 
+}
+.sub-header .slick-track .slick-slide:nth-child(1) .slider-item {
+  padding-left: 0px !important;  
+}
+ 

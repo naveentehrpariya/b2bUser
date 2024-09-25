@@ -37,29 +37,19 @@ const HomeBar = () => {
   return (
     <>
       <Layout>
-    
-        <div className="container mx-auto" >
-          <div className="home">
+        <div className="mt-6  " >
+          <div className="home px-12 py-44 rounded-[40px]">
             <div className="home-content ">
-              <span className="h2 fw-bolder">
-                {useTranslate("Leading B2B E-commerce Platform")}
-              </span>
-              <p className="py-3 " style={{ fontSize: "20px" }}>
-                {useTranslate(
-                  "Explore more then thousands products and get best AI filtration experience answer few question and AI will let you know best products."
-                )}
+              <h2 className="text-[40px] font-bold">{useTranslate("Leading B2B E-commerce Platform")}</h2>
+              <p className="py-3 text-lg"  >
+                {useTranslate("Explore more then thousands products and get best AI filtration experience answer few question and AI will let you know best products.")}
               </p>
-              <div className="ask-ai-box">
-                <input
-                    type="text"
-                    className="ai-search-input"
-                    placeholder={useTranslate("Search Keywords")}
-                    value={searchQuery}
-                    onChange={(e) => setSearchQuery(e.target.value)}
+              <div className="ask-ai-box mt-6 !bg-none !rounded-[20px] p-0 relative">
+                <input type="text"
+                    className="w-full !rounded-2xl px-4 py-[20px] text-lg" placeholder={useTranslate("Search Keywords")}
+                    value={searchQuery} onChange={(e) => setSearchQuery(e.target.value)}
                 />
-                <button className="btn btn-primary  btn-font" onClick={handleSearch}>
-                  {useTranslate("Ask AI")}
-                </button>
+                <button className=" absolute top-[10px] right-[10px] !border-0 py-[12px]  btn btn-primary btn-font !rounded-xl" onClick={handleSearch}>{useTranslate("Ask AI")}</button>
               </div>
               {/* <button className="btn bg-white btn-bg-white  btn-font arrow-button">
                 {useTranslate("Ask AI")}
@@ -108,19 +98,18 @@ const HomeBar = () => {
       </div> */}
 
 
-        <div className="container mx-automy-5">
+        <div className="container mx-auto my-5">
           <span className="h3 ps-3 fw-bold">
             {useTranslate("Popular Products")}
           </span>
           <Slider {...productSliderSettings} className="home-carousel">
-            {products?.data &&
-              products?.data?.map((product) => (
+            {products?.data && products?.data?.map((product) => (
                 <ProductCards
                   key={product.id}
                   className="mx-3"
                   data={product}
                 />
-              ))}
+            ))}
           </Slider>
         </div>
         {/* product cards slider ends */}

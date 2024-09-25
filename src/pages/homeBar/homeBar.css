@@ -11,19 +11,11 @@
     color: white;
   }
   
-  .ask-ai-box {
-    background: white;
-    border-radius: 32px;
-    padding: 15px;
-    width: 500px;
-    display: flex;
-    justify-content: space-between;
-  }
+  
   
   .ask-ai-box input {
     border: none;
     border-radius: 32px;
-    width: 70%;
     padding: 5px;
   }
   
